@@ -1,0 +1,93 @@
+.timeline-swiper
+    position: absolute
+    right: 0rem
+    width: 103.5rem
+    padding-bottom: 25rem
+    padding-left: 3rem
+    &-wrapper
+        margin-top: 3.3rem
+        padding-top: 3.3rem
+    &-button-prev
+        content: url('../icons/left_arrow.svg')
+        top: 1rem
+        left: 48rem
+    &-button-next
+        content: url('../icons/right_arrow.svg')
+        top: 1rem
+        left: 81rem
+    &-pagination
+        top: 0.2rem
+        font-style: normal
+        font-weight: 500
+        font-size: 1.4rem
+        color: #BAC4C9
+        line-height: 1
+        z-index: -3
+        .asd
+            display: none
+        .swiper-pagination-current
+            position: absolute
+            left: 55rem
+        .swiper-pagination-total
+            position: absolute
+            left: 76rem
+        &-mobile
+            display: none
+    &-slide
+        .timeline__news_block_date_img-red
+            display: none
+    &-movement
+        position: absolute
+        top: -1rem
+.swiper-horizontal
+    .timeline-swiper-scrollbar
+        top: 0.7rem
+        left: 58.7rem
+        width: 15.2rem
+        height: 0.4rem
+    &-scrollbar-drag
+        cursor: pointer
+        background-color:#0F1010
+        height: 0.4rem
+        width: 0.4rem
+.swiper-slide-active .timeline__news_block
+    margin-top: 8rem
+    background: rgba(15, 16, 16, 0.9)
+    box-shadow: 1.97198rem 2.95796rem 11.8319rem rgba(130, 148, 160, 0.25), 3.94395rem 1.97198rem 8.87389rem rgba(45, 50, 54, 0.2)
+    backdrop-filter: blur(5rem)
+    border-radius: 3.94395rem
+    .timeline__news_block_date_img-black
+        display: none
+    .timeline__news_block_date_img-red
+        display: block
+    .timeline__news_block_text
+        color: #FFFFFF
+    .timeline__news_block_header_img
+        background: url("../icons/match_red.svg") no-repeat
+        background-size: cover
+.activity
+    &__content-wrap
+        width: 69rem
+        margin-top: 11rem
+    &-media-button-next
+        background: url("../icons/arrow_mini_right.svg") center no-repeat
+        position: absolute
+        top: 66rem
+        height: 2rem
+    &-media-button-prev
+        background: url("../icons/arrow_mini_left.svg") center no-repeat
+        position: absolute
+        top: 66rem
+        height: 2rem
+    &-media-pagination
+        font-style: normal
+        font-weight: 500
+        font-size: 3rem
+        color: #BAC4C9
+.swiper-pagination-current
+    color:  #0F1010
+    margin-right: 0.6rem
+.swiper-button-next:after
+    content: ''
+.swiper-button-prev:after
+    content: ''

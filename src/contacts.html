@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/simple-calendar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span class="short"></span>
+                </div>
+                <a href="index.html" class="header__logo">
+                    <img src="icons/logo.svg" alt="logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header_item"><a href="about.html" class="header_link">О пресс-центре</a></li>
+                        <li class="header_item"><a href="calendar.html" class="header_link">Кадендарь мероприятий</a></li>
+                        <li class="header_item"><a href="broadcasts.html" class="header_link">Трансляция</a></li>
+                        <li class="header_item"><a href="contacts.html" class="header_link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="header__contacts">
+                    <div href="tel:+79000001100" class="header-img"><img src="icons/phone.svg" alt="phone"></div>
+                    <div href="tel:+79000001100" class="header_phone">+7 900 000 11-00</div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
+    <main>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__blur">
+                    <div class="contact__blur_text">
+                        <div class="contact__blur_text_title-desc">Контакты</div>
+                        <div class="contact__blur_text_title-mobile">Вы можете 
+                            с нами связаться</div>
+                        <div class="contact__blur_text_subtitle">Мы рассматриваем пресс-мероприятия как динамично развивающийся формат, он является неотъемлемой частью работы информационного агентства</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <div id="map" class="map__location"></div>
+                <div class="map__connection">
+                    <div class="map__connection_title-desc">Свяжитесь с нами</div>
+                    <div class="map__connection_title-mobile">Наши <span>контакты</span></div>
+                    <div class="map__connection_title-wrap">
+                        <div class="map__connection_wrapper">
+                            <div class="map__connection_wrapper_img">
+                                <img src="icons/address.svg" alt="address">
+                                <div class="map__connection_wrapper_subtitle map__connection_wrapper_subtitle-address">Адрес</div>
+                            </div>
+                            <div class="map__connection_wrapper_text">Москва, новый Арбат, 24</div>
+                        </div>
+                        <div class="map__connection_wrapper">
+                            <div class="map__connection_wrapper_img">
+                                <img src="icons/phone_connection.svg" alt="phone_connection">
+                                <div class="map__connection_wrapper_subtitle map__connection_wrapper_subtitle-phone">Телефон</div>
+                            </div>
+                            <div class="map__connection_wrapper_text_phone">
+                                <div class="map__connection_wrapper_text_phone_number">+7 (985) 724-12-12</div>
+                                <div class="map__connection_wrapper_text_phone_number">+7 (985) 724-12-12</div>
+                            </div>
+                        </div>
+                        <div class="map__connection_wrapper">
+                            <div class="map__connection_wrapper_img">
+                                <img src="icons/mail.svg" alt="mail">
+                                <div class="map__connection_wrapper_subtitle map__connection_wrapper_subtitle-mail">E-mail</div>
+                            </div>
+                            <div class="map__connection_wrapper_text_mail">
+                                <div class="map__connection_wrapper_text_mail_address">name@yandex.ru</div>
+                                <div class="map__connection_wrapper_text_mail_address">name@yandex.ru</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map__connection_icon">
+                        <img src="icons/icon_map.svg" alt="icon_map">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-contacts application-map">
+            <div class="container">
+                <div class="application__wrapper">
+                    <div class="application__wrapper_phone">
+                        <img src="img/iphone.png" alt="phone">
+                    </div>
+                    <div class="application__wrapper_request">
+                        <div class="application__wrapper_title">Оставьте заявку</div>
+                        <div class="application__wrapper_subtitle">Оставьте свои контакты, чтобы забронировать площадку медиацентра</div>
+                        <form class="application__wrapper-form" action="#">
+                            <input name="name"  class="input-name" required placeholder="Ваше имя" type="text">
+                            <input name="surname"  class="input-surname" required placeholder="Ваша фамилия" type="text">
+                            <input name="phone" class="input-phone" required placeholder="+ 7 (___) ___ - __ - __">
+                            <input name="email" class="input-email" required placeholder="Ваш E-mail" type="email">
+                            <button class="timeline__wrap_details_btn application__wrapper_btn">Отправить
+                                <a href="#" class="timeline__wrap_details_btn_vector"><img src="icons/arrow.svg" alt="arrow"></a>
+                            </button>
+                        </form>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="footer__logo">
+                    <img src="icons/logo.svg" alt="logo">
+                </a>
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <div class="footer__list-first">
+                            <li class="footer_item"><a href="#" class="footer_link">О пресс-центре</a></li>
+                            <li class="footer_item"><a href="#require" class="footer_link">Кадендарь мероприятий</a></li>
+                        </div>
+                        <div class="footer__list-second">
+                            <li class="footer_item"><a href="#require" class="footer_link">Трансляция</a></li>
+                            <li class="footer_item"><a href="#" class="footer_link">Контакты</a></li>
+                        </div>
+                    </ul>
+                </nav>
+                <a class="footer__contacts">
+                    <div href="tel:+79000001100" class="footer-img"><img src="icons/phone.svg" alt="phone"></div>
+                    <div href="tel:+79000001100" class="footer_phone">+7 900 000 11-00</div>
+                </a>
+            </div>
+            <div class="footer__wrapper_information">
+                <div class="footer__wrapper_information_channel">© 2021 «ООО «Национальный спортивный телеканал»</div>
+                <div class="footer__wrapper_information_agreement">Пользовательское соглашение</div>
+                <div class="footer__wrapper_information_social">
+                    <div class="footer__wrapper_information_social_img">
+                        <a href="#"><img src="icons/social/VK.svg" alt="ВК"></a>
+                    </div>
+                    <div class="footer__wrapper_information_social_img">
+                        <a href="#"><img src="icons/social/FB.svg" alt="FB"></a>
+                    </div>
+                    <div class="footer__wrapper_information_social_img">
+                        <a href="#"><img src="icons/social/Insta.svg" alt="insta"></a>
+                    </div>
+                    <div class="footer__wrapper_information_social_img">
+                        <a href="#"><img src="icons/social/TG.svg" alt="TG"></a>
+                    </div>
+                    <div class="footer__wrapper_information_social_img">
+                        <a href="#"><img src="icons/social/YT.svg" alt="YT"></a>
+                    </div>
+                    <div class="footer__wrapper_information_social_img">
+                        <a href="#"><img src="icons/social/Skype.svg" alt="Skype"></a>
+                    </div>
+                    <div class="footer__wrapper_information_social_img">
+                        <a href="#"><img src="icons/social/Twitter.svg" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+		<div class="popup-wrap">
+			<div class="popup-close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup-content">
+        <div class="card-item">
+          <div class="card-item__img">
+            <img src="img/archive-2.png" alt="">
+
+            <div class="card-item__elems">
+              <div class="card-item__elem card-item__elem-broadcasts">
+                <span class="card-item__elem-decor"></span>
+                <div class="card-item__elem-text">
+                  <span class="card-elem-text-desktop">Прямая трансляция</span>
+                  <span class="card-elem-text-mobile">Трансляция</span>
+                </div>
+              </div>
+
+              <div class="card-item__elem card-item__elem-date">
+                <img src="img/calendar-icon.svg" alt="" class="card-item__elem-img">
+                <div class="card-item__elem-text">12 ноя 2021
+                  <span class="card-elem-text-desktop">в 11:00</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="card-item__play">
+              <img src="img/play.svg" alt="">
+            </a>
+
+            <a href="#" class="card-item__btn">Аккредитироваться</a>
+          </div>
+          <div class="card-item__text">
+            <div class="card-item__title">Пресс-конференция перед турниром Eagle FC </div>
+            <div class="card-item__description">
+              Мероприятие пройдет в онлайн-формате. Представители СМИ могут принять участие в пресс-конференции
+              дистанционно при предварительной аккредитации. Для этого необходимо при регистрации указать личный
+              мобильный номер, к которому привязано приложение WhatsApp.
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <div class="popup popup-feedback" id="popup-feedback">
+		<div class="popup-wrap">
+			<div class="popup-close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup-content">
+                <div class="application__wrapper">
+                    <div class="application__wrapper_phone">
+                        <img src="img/iphone.png" alt="phone">
+                    </div>
+                    <div class="application__wrapper_request">
+                        <div class="application__wrapper_title">Оставьте заявку</div>
+                        <div class="application__wrapper_subtitle">Оставьте свои контакты, чтобы забронировать площадку медиацентра</div>
+                        <form class="application__wrapper-form" action="#">
+                            <input name="name"  class="input-name" required placeholder="Ваше имя" type="text">
+                            <input name="surname"  class="input-surname" required placeholder="Ваша фамилия" type="text">
+                            <input name="phone" class="input-phone" required placeholder="+ 7 (___) ___ - __ - __">
+                            <input name="email" class="input-email" required placeholder="Ваш E-mail" type="email">
+                            <button class="timeline__wrap_details_btn application__wrapper_btn">Отправить
+                                <a href="#" class="timeline__wrap_details_btn_vector"><img src="icons/arrow.svg" alt="arrow"></a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.simple-calendar.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [55.753088, 37.587614],
+                    zoom: 9
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Матч',
+                    balloonContent: 'Москва, новый Арбат, 24'
+                }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'icons/icon_place.png',
+                    iconImageSize: [52, 77],
+                    iconImageOffset: [-5, -38]
+                }); 
+
+            myMap.geoObjects
+                .add(myPlacemark);
+        });
+    </script>
+</body>
+</html>

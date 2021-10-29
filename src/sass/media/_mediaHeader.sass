@@ -1,0 +1,74 @@
+@media (max-width: 48em)
+  .header
+    padding: 0
+    .container
+      padding: 0
+    &__wrapper
+      padding: 6.4rem 3rem
+      background: #fff
+      .hamburger
+        width: 4.8rem
+        height: 4.4rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+        cursor: pointer
+        &.active
+          justify-content: center
+          align-items: center
+          span
+            &:nth-child(1)
+              transform: rotate(45deg)
+              margin-bottom: -1px
+            &:nth-child(2)
+              transform: rotate(-45deg)
+              margin-top: -1px
+            &.short
+              display: none
+        span
+          display: block
+          width: 100%
+          height: 2px
+          border-radius: 2rem
+          background-color: #151812
+          transition: all .25s
+          &.short 
+            width: 2.3rem
+    &-img
+      width: 4.3rem
+      height: auto
+      img
+        width: 100%
+        height: auto               
+    &__nav
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      margin: 0
+      padding: 11rem 3rem 11rem
+      background: rgba(237, 241, 246, 0.6)
+      backdrop-filter: blur(10rem)
+      transform: translateY(-150%)
+      transition: transform .25s
+      text-align: center
+      z-index: -1
+      &.active
+        transform: translateY(0)
+    &__list
+      width: auto
+      display: block
+      li
+        &:not(:last-child)
+          margin-bottom: 8.2rem
+      a
+        font-size: 3.6rem
+    &_phone
+      display: none
+    &__logo
+      width: 37.8rem
+      img
+        width: 100%
+    &__contacts
+      margin: 0

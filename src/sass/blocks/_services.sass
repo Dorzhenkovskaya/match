@@ -1,0 +1,132 @@
+.services
+  margin: 26.5rem 0 38.5rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-info
+    display: flex
+    justify-content: space-between
+    width: 49%
+    flex-shrink: 0
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: -7.5rem
+      left: -17rem
+      width: 80.2rem
+      height: 93.4rem
+      background: url(../img/info-bg-b.svg) 50% no-repeat
+      background-size: contain
+    &::after
+      content: ''
+      position: absolute
+      top: -8rem
+      left: -17.5rem
+      width: 91rem
+      height: 97.4rem
+      background: url(../img/info-bg-a.svg) 50% no-repeat
+      background-size: contain
+      z-index: -1
+    &__group
+      &:nth-child(2)
+        margin-top: -6rem
+      &:nth-child(3)
+        margin-top: 3rem
+    &__item
+      display: flex
+      align-items: flex-end
+      width: 22.4rem
+      aspect-ratio: 1
+      background: #fff
+      padding: 3rem 1.5rem 3rem 3rem
+      border-radius: 3rem
+      box-shadow: 0 10rem 8rem rgba(0, 0, 0, 0.07)
+      position: relative
+      &:not(:last-child)
+        margin-bottom: 3.5rem
+        z-index: 1
+      &:first-child
+        z-index: 2
+      &.active
+        border: .3rem solid #FCFCFC
+        background: transparent
+        box-shadow: none
+      &.no-bxsh
+        box-shadow: none
+      &-number
+        font-size: 5rem
+        font-weight: 700
+        line-height: 1
+        color: #D4DEE7
+        position: absolute
+        top: 2.5rem
+        right: 2.5rem
+      &-title
+        font-size: 2rem
+        font-weight: 700
+        line-height: 1.48
+        color: #0F1010
+        span
+          &.services-info-mobile
+            display: none
+    &__more
+      &-wrap
+        display: none
+  &-text
+    width: 43.4%
+    height: 100%
+    padding: 5.2rem 2rem 4.9rem 4.7rem
+    flex-shrink: 0
+    margin-top: 22.2rem
+    position: relative
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(255, 255, 255, 0.4)
+      backdrop-filter: blur(1rem)
+      z-index: -1
+    &::after
+      content: ''
+      position: absolute
+      top: -14.5rem
+      right: -3rem
+      width: 27.6rem
+      height: 26.3rem
+      background: url(../img/services-star.png) 50% no-repeat
+      background-size: contain
+      z-index: -2
+  &-title
+    font-size: 5rem
+    font-weight: 700
+    color: #0F1010
+    margin-bottom: 4rem
+    span
+      color: #EF2020
+  &-description
+    font-size: 1.8rem
+    line-height: 1.39
+    letter-spacing: .005em
+    color: #0F1010
+    margin-bottom: 6.5rem
+  &-link
+    font-size: 1.8rem
+    font-weight: 500
+    color: #EF2020
+    position: relative
+    padding-right: 4.8rem
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+      width: 3rem
+      height: 1.6rem
+      background: url(../img/arrow-red.svg) 50% no-repeat
+      background-size: contain

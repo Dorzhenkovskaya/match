@@ -1,0 +1,57 @@
+.contact
+    position: relative
+    min-height: 53rem
+    background: url(../img/contact_main.png) center (center/cover) no-repeat
+    &__blur
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 107.2rem
+        height: 40rem
+        z-index: 1
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: rgba(237, 241, 246, 0.1)
+            backdrop-filter: blur(7rem)
+            border-radius: 0rem 3.5rem 0rem 0rem
+            z-index: -1
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            border-width: 1rem
+            border-style: solid
+            border-image: url(../icons/border_contact.png) 13
+            z-index: -1
+            border-radius: inherit
+        &_text
+            position: absolute
+            top: 11rem
+            left: 20rem
+            z-index: 2
+            &_title
+                &-desc
+                    display: block
+                    width: 64.8rem
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 8rem
+                    color: #FFFFFF
+                &-mobile
+                    display: none
+            &_subtitle
+                margin-top: 1.3rem
+                width: 46.8rem
+                font-style: normal
+                font-weight: 500
+                font-size: 1.7rem
+                line-height: 1.46
+                color: #D7D7D7

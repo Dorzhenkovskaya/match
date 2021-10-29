@@ -1,0 +1,202 @@
+.broadcasts
+  margin-bottom: 18rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-left
+    width: 66%
+    flex-shrink: 0
+  &-title
+    font-size: 5rem
+    font-weight: 700
+    color: #0F1010
+    margin-bottom: 8.2rem
+    span
+      color: #EF2020
+  &-video
+    width: 100%
+    height: 64.7rem
+    position: relative
+    z-index: 1
+    >img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      border-radius: 3rem
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 80.6rem
+      height: 40.4rem
+      filter: blur(15rem)
+      background: url(../img/bd-sh.png) 50% no-repeat
+      background-size: contain
+      z-index: -1
+    &__play
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 12.7rem
+      height: 12.8rem
+      border-radius: 3rem
+      display: flex
+      justify-content: center
+      align-items: center
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(178.81deg, rgba(214, 214, 214, 0.477) 39.22%, rgba(226, 228, 227, 0.9) 124.68%)
+        backdrop-filter: blur(2rem)
+        border-radius: inherit
+        z-index: -1
+      img
+        width: 5.5rem
+  &-media
+    width: 31.4%
+    padding-top: .8rem
+    flex-shrink: 0
+    &__heading
+      margin-bottom: 2.6rem
+    &__title
+      font-size: 3.6rem
+      font-weight: 700
+      color: #0F1010
+      margin-bottom: 1.7rem
+    &__category
+      display: flex
+      align-items: center
+      width: 90%
+      flex-shrink: 0
+      &-wrap
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+      &-item
+        font-size: 1.5rem
+        color: #0F1010
+        position: relative
+        z-index: 1
+        cursor: pointer
+        &:not(:last-child)
+          margin-right: 4rem
+        &.active
+          padding: 1.5rem 1.6rem
+          border-radius: 10rem
+          background: linear-gradient(180deg, rgba(238, 242, 246, 0.7) 0%, rgba(172, 176, 181, 0.7) 100%)
+          font-weight: 700
+          color: #fff
+          &::before
+            content: ''
+            position: absolute
+            inset: .12rem
+            background: #0F1010
+            border-radius: inherit
+            z-index: -1
+      &-btn
+        display: inline-block
+        width: 2.4rem
+    &__content
+      display: block
+      width: auto
+      padding-right: 2.8rem
+      max-height: 65rem
+      overflow-y: auto
+      margin-right: .8rem
+      &-wrap
+        position: relative
+      &::-webkit-scrollbar 
+        width: .4rem
+      &::-webkit-scrollbar-track
+        background: #E7EBEF
+        border-radius: 10rem
+        margin: 3.5rem 0
+      &::-webkit-scrollbar-thumb
+        background: #0F1010
+        border-radius: 10rem
+      &-number
+        position: absolute
+        top: 0
+        right: .3rem
+        font-size: 1.4rem
+        font-weight: 500
+        color: #0F1010
+        &.total
+          top: auto
+          bottom: 0
+          color: #BAC4C9
+    &__item
+      display: flex
+      justify-content: space-between
+      padding: 2rem
+      background: #EBF1F7
+      border-radius: 3.5rem
+      &:not(:last-child)
+        margin-bottom: 3.9rem
+      &-text
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 1.9rem 0
+        width: 56%
+        flex-shrink: 0
+      &-title
+        font-size: 2.2rem
+        font-weight: 700
+        line-height: 1.09
+        color: #0F1010
+      &-date
+        font-size: 1.4rem
+        line-height: 1.5
+        color: #6F797D
+      &-video
+        width: 16.2rem
+        height: 15rem
+        flex-shrink: 0
+        border-radius: 3rem
+        position: relative
+        overflow: hidden
+        >img
+          width: 100%
+          height: 100%
+          object-fit: cover
+        &-play
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          width: 4.1rem
+          aspect-ratio: 1
+          border-radius: 1rem
+          display: flex
+          justify-content: center
+          align-items: center
+          z-index: 1
+          &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: linear-gradient(178.81deg, rgba(214, 214, 214, 0.477) 39.22%, rgba(226, 228, 227, 0.9) 124.68%)
+            backdrop-filter: blur(2rem)
+            border-radius: inherit
+            z-index: -1
+          img
+            width: 1.8rem
+    
+    &-pagination
+      display: none
+    &-button
+      &-prev, &-next
+        display: none

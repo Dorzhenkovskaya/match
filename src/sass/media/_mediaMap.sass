@@ -1,0 +1,84 @@
+@media (max-width: 48em)
+    .map
+        padding: 0
+        .container
+            padding: 0
+        &__location
+            width: 75rem
+            height: 97.6rem
+            border-radius: 0rem
+            filter: drop-shadow(5rem 3rem 14rem rgba(134, 159, 176, 0.3))
+        &__connection
+            width: 69rem
+            top: -45rem
+            right: 3rem
+            padding: 4.4rem 5rem 0rem 4.8rem
+            &::before
+                background: rgba(255, 255, 255, 0.7)
+                box-shadow: 5rem 2rem 9rem rgba(114, 117, 133, 0.3)
+                backdrop-filter: blur(6rem)
+                border-radius: 2rem
+            &_title
+                &-desc
+                    display: none
+                &-mobile
+                    position: relative
+                    z-index: 2
+                    display: block
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 8rem
+                    color: #0F1010
+                    span
+                        color: #EF2020
+                &-wrap
+                    display: flex
+                    flex-flow: wrap
+                    flex-direction: column
+                    margin-top: 6.4rem
+                    .map__connection_wrapper:nth-child(1)
+                        order: 2
+                    .map__connection_wrapper:nth-child(2)
+                        order: 1
+                    .map__connection_wrapper:nth-child(3)
+                        order: 0
+            &_icon
+                left: 4rem
+                bottom: -7.3rem
+                img
+                    width: 12rem
+                    height: 12rem
+                    border-radius: 3rem
+            &_wrapper
+                margin-bottom: 5.8rem
+                &_subtitle
+                    font-size: 3rem
+                    margin-left: 4rem
+                    &-mail
+                        font-size: 3.4rem
+                    &-phone
+                        margin-left: 6rem
+                        margin-left: 3.2rem
+                        line-height: 1.1
+                    &-address
+                        margin-top: 0.5rem
+                &_text
+                    font-size: 3.4rem
+                    margin-top: 4rem
+                    &_phone
+                        font-size: 3.4rem
+                        margin-top: 3.2rem
+                        line-height: 1.2
+                        &_number
+                            &:nth-child(1)
+                                margin-right: 5rem
+                    &_mail
+                        font-size: 3.4rem
+                        margin-top: 3.5rem
+                        &_address
+                            &:nth-child(1)
+                                margin-right: 4rem
+                &_img
+                    img
+                        width: 4.2rem
+                        height: 4rem

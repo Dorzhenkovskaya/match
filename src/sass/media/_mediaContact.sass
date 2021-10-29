@@ -1,0 +1,32 @@
+@media (max-width: 48em)
+    .contact
+        min-height: 182rem
+        background: url(../img/contact_mobile.png) center (center/cover) no-repeat
+        &__blur
+            width: 68rem
+            height: 61.8rem
+            top: 6.4rem
+            &::before
+                background: rgba(237, 241, 246, 0.3)
+                backdrop-filter: blur(7rem)
+                border-radius: 0rem 4rem 4rem 0rem
+            &::after
+                border-image: url(../icons/border_contact_mobile.png) 6
+            &_text
+                top: 4.4rem
+                left: 3rem
+                width: 41rem
+                line-height: 1
+                &_title
+                    &-desc
+                        display: none
+                    &-mobile
+                        display: block
+                        font-weight: bold
+                        font-size: 8rem
+                        color: #FFFFFF
+                &_subtitle
+                    font-size: 3rem
+                    margin-top: 8.6rem
+                    line-height: 1.45
+                    width: 59.528rem

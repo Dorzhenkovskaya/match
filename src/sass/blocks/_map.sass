@@ -1,0 +1,95 @@
+.ymaps-2-1-79-map ymaps
+    border-radius: 3rem
+.map
+    padding: 16.3rem 0 0 0
+    position: relative
+    &__location
+        width: 113.8rem
+        height: 75rem
+        border: none
+        border-radius: 3rem
+    &__connection
+        position: relative
+        width: 61rem
+        padding: 7.8rem 10.8rem 0rem 7.4rem
+        position: absolute
+        top: 25.5rem
+        right: 24rem
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: rgba(255, 255, 255, 0.1)
+            box-shadow: 5rem 5rem 15rem rgba(114, 117, 133, 0.2)
+            backdrop-filter: blur(6rem)
+            border-radius: 2.5rem
+            z-index: 1
+        &_title
+            &-desc
+                display: block
+                width: 42.8rem
+                font-style: normal
+                font-weight: bold
+                font-size: 5rem
+                color: #0F1010
+                position: relative
+                z-index: 2
+                margin-bottom: 5.9rem
+            &-mobile
+                display: none
+        &_wrapper
+            position: relative
+            z-index: 2
+            margin-bottom: 5.8rem
+            &_img
+                display: flex
+                img
+                    width: 1.9rem
+                    height: 2.1rem
+            &_subtitle
+                margin-left: 1.9rem
+                font-style: normal
+                font-weight: bold
+                font-size: 1.7rem
+                line-height: 1.33
+                color: #0F1010
+            &_text
+                font-style: normal
+                font-weight: normal
+                font-size: 2.2rem
+                line-height: 24px
+                color: #6F797D
+                margin-top: 2rem
+                &_phone
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 2.2rem
+                    line-height: 24px
+                    color: #6F797D
+                    display: flex
+                    margin-top: 2rem
+                    &_number
+                        &:nth-child(1)
+                            margin-right: 3rem
+                &_mail
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 2.2rem
+                    line-height: 24px
+                    color: #6F797D
+                    display: flex
+                    margin-top: 1.8rem
+                    &_address
+                        &:nth-child(1)
+                            margin-right: 2rem
+        &_icon
+            position: absolute
+            z-index: 1
+            bottom: -5.6rem
+            right: 3.1rem
+            img
+                width: 9.8rem
+                height: 9.8rem

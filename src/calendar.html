@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/simple-calendar.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span class="short"></span>
+        </div>
+        <a href="index.html" class="header__logo">
+          <img src="icons/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header_item"><a href="about.html" class="header_link">О пресс-центре</a></li>
+            <li class="header_item"><a href="calendar.html" class="header_link">Кадендарь мероприятий</a></li>
+            <li class="header_item"><a href="broadcasts.html" class="header_link">Трансляция</a></li>
+            <li class="header_item"><a href="contacts.html" class="header_link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a class="header__contacts">
+          <div href="tel:+79000001100" class="header-img"><img src="icons/phone.svg" alt="phone"></div>
+          <div href="tel:+79000001100" class="header_phone">+7 900 000 11-00</div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner banner-template banner-calendar">
+      <div class="banner-content">
+        <div class="banner-img">
+          <img src="img/banner-template.png" alt="" class="banner-img__desktop">
+          <img src="img/banner-template-mobile.png" alt="" class="banner-img__mobile">
+        </div>
+        <div class="banner-text">
+          <div class="banner-number">01</div>
+          <div class="banner-title">Узнай первым</div>
+          <div class="banner-description">Мы рассматриваем пресс-мероприятия как динамично развивающийся формат, он
+            является неотъемлемой частью работы информационного агентства </div>
+          <a href="#" class="banner-btn modal-feedback">Оставить заявку</a>
+        </div>
+      </div>
+      <div class="banner-media">
+        <div class="banner-media__group">
+          <div class="banner-media__item">
+            <div class="banner-media__item-img">
+              <img src="img/banner-icon-1.svg" alt="">
+            </div>
+            <div class="banner-media__item-text">
+              <div class="banner-media__item-name">Площадь</div>
+              <div class="banner-media__item-number">200<span>м<sup>2</sup></span></div>
+            </div>
+          </div>
+
+          <div class="banner-media__item">
+            <div class="banner-media__item-img">
+              <img src="img/banner-icon-2.svg" alt="">
+            </div>
+            <div class="banner-media__item-text">
+              <div class="banner-media__item-name">Кол-во мест</div>
+              <div class="banner-media__item-number">3000</div>
+            </div>
+          </div>
+
+          <div class="banner-media__item">
+            <div class="banner-media__item-img">
+              <img src="img/banner-icon-3.svg" alt="">
+            </div>
+            <div class="banner-media__item-text">
+              <div class="banner-media__item-name">Экран</div>
+              <div class="banner-media__item-number">100<sup>”</sup></div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-media__img">
+          <img src="img/banner-media-img.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="activity">
+      <div class="container">
+          <div class="activity__title activity__title-calendar">Сегодня в <span>Медиа Центре</span>
+              <div class="activity__title_details activity__title_details-calendar">
+                  <div class="activity__title_details_text">Все мероприятия</div>
+                  <div class="activity__title_details_btn">
+                      <img src="icons/arrow_mini_right.svg" alt="arrow_mini_right">
+                  </div>
+              </div>
+          </div>
+          <div class="activity__block activity__block-about activity__block-calendar">
+              <div class="swiper activity-media__content-wrap activity-media__content-wrap-about" id="activity-slider">
+                  <div class="swiper-wrapper activity-media__content activity-media__content-about">
+                    <div class="swiper-slide activity-media__item swiper-slide activity-media__item-about">
+                      <div class="activity__tabs_tab_wrapper">
+                          <div class="activity__tabs_tab_wrapper_date activity__tabs_tab_wrapper_date-about">
+                              <div class="activity__tabs_tab_wrapper_date_number">17</div>
+                              <div class="activity__tabs_tab_wrapper_date_month activity__tabs_tab_wrapper_date_month-about">00</div>
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_img">
+                              <img src="img/event/event2.png" alt="event4">
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_text">
+                              <div class="activity__tabs_tab_wrapper_text_title">Прямая трансляция</div>
+                              <div class="activity__tabs_tab_wrapper_text_subtitle">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                          </div>
+                      </div>
+                    </div>
+    
+                    <div class="swiper-slide activity-media__item activity-media__item-about">
+                      <div class="activity__tabs_tab_wrapper activity__tabs_tab_active">
+                          <div class="activity__tabs_tab_wrapper_date activity__tabs_tab_wrapper_date-about">
+                              <div class="activity__tabs_tab_wrapper_date_number">21</div>
+                              <div class="activity__tabs_tab_wrapper_date_month activity__tabs_tab_wrapper_date_month-about">00</div>
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_img">
+                              <img src="img/event/event3.png" alt="event3">
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_text">
+                              <div class="activity__tabs_tab_wrapper_text_title">Видеомост</div>
+                              <div class="activity__tabs_tab_wrapper_text_subtitle">Предматчевый график сборных России и Хорватии</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide activity-media__item activity-media__item-about">
+                      <div class="activity__tabs_tab_wrapper">
+                          <div class="activity__tabs_tab_wrapper_date activity__tabs_tab_wrapper_date-about">
+                              <div class="activity__tabs_tab_wrapper_date_number">19</div>
+                              <div class="activity__tabs_tab_wrapper_date_month activity__tabs_tab_wrapper_date_month-about">30</div>
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_img">
+                              <img src="img/event/event1.png" alt="event1">
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_text">
+                              <div class="activity__tabs_tab_wrapper_text_title">Видеомост</div>
+                              <div class="activity__tabs_tab_wrapper_text_subtitle">Предматчевый график сборных России и Хорватии</div>
+                          </div>
+                      </div>
+                    </div>
+    
+                    <div class="swiper-slide activity-media__item activity-media__item-about">
+                      <div class="activity__tabs_tab_wrapper">
+                          <div class="activity__tabs_tab_wrapper_date activity__tabs_tab_wrapper_date-about">
+                              <div class="activity__tabs_tab_wrapper_date_number">18</div>
+                              <div class="activity__tabs_tab_wrapper_date_month activity__tabs_tab_wrapper_date_month-about">00</div>
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_img">
+                              <img src="img/event/event2.png" alt="event4">
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_text">
+                              <div class="activity__tabs_tab_wrapper_text_title">Прямая трансляция</div>
+                              <div class="activity__tabs_tab_wrapper_text_subtitle">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide activity-media__item activity-media__item-about">
+                      <div class="activity__tabs_tab_wrapper">
+                          <div class="activity__tabs_tab_wrapper_date activity__tabs_tab_wrapper_date-about">
+                              <div class="activity__tabs_tab_wrapper_date_number">19</div>
+                              <div class="activity__tabs_tab_wrapper_date_month activity__tabs_tab_wrapper_date_month-about">30</div>
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_img">
+                              <img src="img/event/event1.png" alt="event1">
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_text">
+                              <div class="activity__tabs_tab_wrapper_text_title">Видеомост</div>
+                              <div class="activity__tabs_tab_wrapper_text_subtitle">Предматчевый график сборных России и Хорватии</div>
+                          </div>
+                      </div>
+                    </div>
+    
+                    <div class="swiper-slide activity-media__item activity-media__item-about">
+                      <div class="activity__tabs_tab_wrapper">
+                          <div class="activity__tabs_tab_wrapper_date activity__tabs_tab_wrapper_date-about">
+                              <div class="activity__tabs_tab_wrapper_date_number">18</div>
+                              <div class="activity__tabs_tab_wrapper_date_month activity__tabs_tab_wrapper_date_month-about">00</div>
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_img">
+                              <img src="img/event/event2.png" alt="event4">
+                          </div>
+                          <div class="activity__tabs_tab_wrapper_text">
+                              <div class="activity__tabs_tab_wrapper_text_title">Прямая трансляция</div>
+                              <div class="activity__tabs_tab_wrapper_text_subtitle">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination activity-media-pagination"></div>
+                  <div class="swiper-button-prev activity-media-button-prev"></div>
+                  <div class="swiper-button-next activity-media-button-next"></div>
+              </div>
+              <div class="activity__conference">
+                  <div class="activity__conference_btn">
+                      <button class="activity__conference_btn_broadcast">
+                          <div class="activity__conference_btn_broadcast_circle"></div>
+                          <div class="activity__conference_btn_broadcast_text">Прямая трансляция</div>
+                          <div class="activity__conference_btn_broadcast_text-mobile">Трансляция</div>
+                      </button>
+                      <button class="activity__conference_btn_date">
+                          <div class="activity__conference_btn_date_calendar">
+                              <img src="icons/calendar.svg" class="activity__conference_btn_date_calendar-desc" alt="calendar">
+                              <img src="icons/calendar_mobile.svg" class="activity__conference_btn_date_calendar-mobile" alt="calendar_mobile">
+                          </div>
+                          <div class="activity__conference_btn_date_text">12 ноя 2021 в 11:00</div>
+                      </button>
+                      <button class="activity__conference_btn_accredited">Аккредитироваться</button>
+                  </div>
+                  <div class="activity__conference_video">
+                      <div class="activity__conference_video_tournament">
+                          <img src="img/tournament.svg" class="activity__conference_video_tournament_img-desc" alt="tournament">
+                          <img src="img/tournament-mobile.png" class="activity__conference_video_tournament_img-mobile" alt="tournament">
+                          <div class="activity__conference_video_tournament_button">
+                              <div class="activity__conference_video_tournament_button_play">
+                                  <img src="icons/play.svg" alt="play">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="activity__conference_descr">
+                      <div class="activity__conference_descr_title">Пресс-конференция перед турниром Eagle FC</div>
+                      <div class="activity__conference_descr_subtitle">О формате самых массовых зимних спортивных соревнований, особенностях их организации, готовности регионов и&nbspпроведении центрального старта «Лыжни России» в олимпийском учебно-спортивном центре «Планерная»...</div>
+                      <div class="activity__conference_descr_img-desc">
+                          <img src="icons/details.svg" alt="details">
+                      </div>
+                      <div class="activity__conference_descr_img-mobile">
+                          <img src="icons/details-mobile.svg" alt="details-mobile">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section class="section-calendar">
+      <div class="container">
+        <div class="section-calendar__title">Календарь <span>мероприятий</span></div>
+        <div class="section-calendar__content">
+          <div class="section-calendar__wrap">
+            <div class="section-calendar__cards">
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-2.png" alt="">
+                  <div class="card-item__category">Футбол</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link modal-up">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-3.png" alt="">
+                  <div class="card-item__category">Теннис</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-4.png" alt="">
+                  <div class="card-item__category">Баскетбол</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-2.png" alt="">
+                  <div class="card-item__category">Футбол</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-3.png" alt="">
+                  <div class="card-item__category">Теннис</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-4.png" alt="">
+                  <div class="card-item__category">Баскетбол</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-2.png" alt="">
+                  <div class="card-item__category">Футбол</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-3.png" alt="">
+                  <div class="card-item__category">Теннис</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item">
+                <div class="card-item__img">
+                  <img src="img/archive-4.png" alt="">
+                  <div class="card-item__category">Баскетбол</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="card-item wide">
+                <div class="card-item__img">
+                  <img src="img/archive-2.png" alt="">
+                  <div class="card-item__category">Футбол</div>
+                  <div class="card-item__date">
+                    <span>15.09</span>
+                    <a href="#" class="card-item__play">
+                      <img src="img/play-small-black.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="card-item__text">
+                  <div class="card-item__title">Пресс-конференция перед турниром Eagle FC Fight Nights</div>
+                  <div class="card-item__description">
+                    Мероприятие пройдет в онлайн-формате. Представители СМИ могут принять участие в пресс-конференции
+                    дистанционно при предварительной аккредитации...
+                  </div>
+                  <a href="#" class="card-item__link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="section-calendar__more-wrap">
+              <a href="#" class="section-calendar__more">Загрузить еще</a>
+            </div>
+          </div>
+          
+          <div class="calendar-wrap">
+            <div class="vanilla-calendar" id="calendar"></div>
+
+            <div class="calendar-time">
+              <input type="hidden" name="type" class="calendar-time__select" value="17:00">
+              <div class="select">
+                <div class="select_checked">
+                  <div class="select-img">
+                    <img src="img/clock.svg" alt="">
+                  </div>
+                  <span class="select-text">17:00</span>
+                </div>
+                <ul class="select-dropdown">
+                  <li class="select-dropdown__option" data-value="17:00">
+                    <div class="select-dropdown__img select-img">
+                      <img src="img/clock-gray.svg" alt="">
+                    </div>
+                    <div class="select-dropdown__text">17:00</div>
+                  </li>
+                  <li class="select-dropdown__option" data-value="20:00">
+                    <div class="select-dropdown__img select-img">
+                      <img src="img/clock-gray.svg" alt="">
+                    </div>
+                    <div class="select-dropdown__text">20:00</div>
+                  </li>
+                  <li class="select-dropdown__option" data-value="22:00">
+                    <div class="select-dropdown__img select-img">
+                      <img src="img/clock-gray.svg" alt="">
+                    </div>
+                    <div class="select-dropdown__text">22:00</div>
+                  </li>
+                  <li class="select-dropdown__option" data-value="23:30">
+                    <div class="select-dropdown__img select-img">
+                      <img src="img/clock-gray.svg" alt="">
+                    </div>
+                    <div class="select-dropdown__text">23:30</div>
+                  </li>
+                  <li class="select-dropdown__option" data-value="00:00">
+                    <div class="select-dropdown__img select-img">
+                      <img src="img/clock-gray.svg" alt="">
+                    </div>
+                    <div class="select-dropdown__text">00:00</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="application">
+      <div class="container">
+        <div class="application__wrapper">
+          <div class="application__wrapper_phone">
+              <img src="img/iphone.png" alt="phone">
+          </div>
+          <div class="application__wrapper_request">
+              <div class="application__wrapper_title">Оставьте заявку</div>
+              <div class="application__wrapper_subtitle">Оставьте свои контакты, чтобы забронировать площадку медиацентра</div>
+              <form class="application__wrapper-form" action="#">
+                  <input name="name"  class="input-name" required placeholder="Ваше имя" type="text">
+                  <input name="surname"  class="input-surname" required placeholder="Ваша фамилия" type="text">
+                  <input name="phone" class="input-phone" required placeholder="+ 7 (___) ___ - __ - __">
+                  <input name="email" class="input-email" required placeholder="Ваш E-mail" type="email">
+                  <button class="timeline__wrap_details_btn application__wrapper_btn">Отправить
+                      <a href="#" class="timeline__wrap_details_btn_vector"><img src="icons/arrow.svg" alt="arrow"></a>
+                  </button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a href="#" class="footer__logo">
+                <img src="icons/logo.svg" alt="logo">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <div class="footer__list-first">
+                        <li class="footer_item"><a href="#" class="footer_link">О пресс-центре</a></li>
+                        <li class="footer_item"><a href="#require" class="footer_link">Кадендарь мероприятий</a></li>
+                    </div>
+                    <div class="footer__list-second">
+                        <li class="footer_item"><a href="#require" class="footer_link">Трансляция</a></li>
+                        <li class="footer_item"><a href="#" class="footer_link">Контакты</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <a class="footer__contacts">
+                <div href="tel:+79000001100" class="footer-img"><img src="icons/phone.svg" alt="phone"></div>
+                <div href="tel:+79000001100" class="footer_phone">+7 900 000 11-00</div>
+            </a>
+        </div>
+        <div class="footer__wrapper_information">
+            <div class="footer__wrapper_information_channel">© 2021 «ООО «Национальный спортивный телеканал»</div>
+            <div class="footer__wrapper_information_agreement">Пользовательское соглашение</div>
+            <div class="footer__wrapper_information_social">
+                <div class="footer__wrapper_information_social_img">
+                    <a href="#"><img src="icons/social/VK.svg" alt="ВК"></a>
+                </div>
+                <div class="footer__wrapper_information_social_img">
+                    <a href="#"><img src="icons/social/FB.svg" alt="FB"></a>
+                </div>
+                <div class="footer__wrapper_information_social_img">
+                    <a href="#"><img src="icons/social/Insta.svg" alt="insta"></a>
+                </div>
+                <div class="footer__wrapper_information_social_img">
+                    <a href="#"><img src="icons/social/TG.svg" alt="TG"></a>
+                </div>
+                <div class="footer__wrapper_information_social_img">
+                    <a href="#"><img src="icons/social/YT.svg" alt="YT"></a>
+                </div>
+                <div class="footer__wrapper_information_social_img">
+                    <a href="#"><img src="icons/social/Skype.svg" alt="Skype"></a>
+                </div>
+                <div class="footer__wrapper_information_social_img">
+                    <a href="#"><img src="icons/social/Twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <div class="popup" id="popup">
+		<div class="popup-wrap">
+			<div class="popup-close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup-content">
+        <div class="card-item">
+          <div class="card-item__img">
+            <img src="img/archive-2.png" alt="">
+
+            <div class="card-item__elems">
+              <div class="card-item__elem card-item__elem-broadcasts">
+                <span class="card-item__elem-decor"></span>
+                <div class="card-item__elem-text">
+                  <span class="card-elem-text-desktop">Прямая трансляция</span>
+                  <span class="card-elem-text-mobile">Трансляция</span>
+                </div>
+              </div>
+
+              <div class="card-item__elem card-item__elem-date">
+                <img src="img/calendar-icon.svg" alt="" class="card-item__elem-img">
+                <div class="card-item__elem-text">12 ноя 2021
+                  <span class="card-elem-text-desktop">в 11:00</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="card-item__play">
+              <img src="img/play.svg" alt="">
+            </a>
+
+            <a href="#" class="card-item__btn">Аккредитироваться</a>
+          </div>
+          <div class="card-item__text">
+            <div class="card-item__title">Пресс-конференция перед турниром Eagle FC </div>
+            <div class="card-item__description">
+              Мероприятие пройдет в онлайн-формате. Представители СМИ могут принять участие в пресс-конференции
+              дистанционно при предварительной аккредитации. Для этого необходимо при регистрации указать личный
+              мобильный номер, к которому привязано приложение WhatsApp.
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <div class="popup popup-feedback" id="popup-feedback">
+		<div class="popup-wrap">
+			<div class="popup-close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup-content">
+        <div class="application__wrapper">
+          <div class="application__wrapper_phone">
+              <img src="img/iphone.png" alt="phone">
+          </div>
+          <div class="application__wrapper_request">
+              <div class="application__wrapper_title">Оставьте заявку</div>
+              <div class="application__wrapper_subtitle">Оставьте свои контакты, чтобы забронировать площадку медиацентра</div>
+              <form class="application__wrapper-form" action="#">
+                  <input name="name"  class="input-name" required placeholder="Ваше имя" type="text">
+                  <input name="surname"  class="input-surname" required placeholder="Ваша фамилия" type="text">
+                  <input name="phone" class="input-phone" required placeholder="+ 7 (___) ___ - __ - __">
+                  <input name="email" class="input-email" required placeholder="Ваш E-mail" type="email">
+                  <button class="timeline__wrap_details_btn application__wrapper_btn">Отправить
+                      <a href="#" class="timeline__wrap_details_btn_vector"><img src="icons/arrow.svg" alt="arrow"></a>
+                  </button>
+              </form>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.simple-calendar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
